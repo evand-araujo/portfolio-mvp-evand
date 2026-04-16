@@ -1,6 +1,14 @@
 const projetos = [
-  { nome: "Projeto 1", descricao: "Site simples" },
-  { nome: "Projeto 2", descricao: "Página de login" }
+  {
+    nome: "Landing Page",
+    descricao: "Página moderna responsiva",
+    link: "#"
+  },
+  {
+    nome: "Sistema de Login",
+    descricao: "Tela de autenticação simples",
+    link: "#"
+  }
 ];
 
 const lista = document.getElementById("lista-projetos");
@@ -12,6 +20,7 @@ projetos.forEach(projeto => {
   div.innerHTML = `
     <h3>${projeto.nome}</h3>
     <p>${projeto.descricao}</p>
+    <a href="${projeto.link}" class="btn">Ver</a>
   `;
 
   lista.appendChild(div);
